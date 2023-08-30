@@ -1,0 +1,162 @@
+<!-- El funcionamiento de los head, header y footer solo se comentaran en este .html, main se comentara en cada uno. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Etiquetas del head necesarias para el funcionamiento de la pagina. -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inicio - Mercado Liebre</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <!-- Importacion de la fuente roboto de Google Fonts y los caracteres especiales de Fontawesome. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5e21164fec.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="cabecera-total">
+                <!-- Fila triple usando flexbox del logotipo, barra y boton de busqueda mediante un formulario y la etiqueta p. -->
+                <a href="/"><img class="logo" src="images/logo-mercado-liebre.svg"></a>
+                <form class="buscar-form" action="/" method="GET">
+                    <input class="buscar-txt" type="text" placeholder="Buscar productos, marcas" maxlength="40" required>
+                    <button class="buscar-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <p class="txtcuota"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <nav>
+                <!-- Etiqueta nav que contiene dos grupos de listas con distintos enlaces a cada una de las funciones de la pagina.
+                Se utilizo flexbox para acomodar cada etiqueta solo en desktop y tablets. -->
+                <ul class="store">
+                    <li><a href="/">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="login">
+                    <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </nav>
+            <!-- Menu hamburguesa disponible solo para dispositivos moviles. Por ahora, solo funciona esteticamente cambiando de color al presionarlo. -->
+            <p class="burger"><i class="fa-solid fa-bars"></i></p>
+        </header>
+        <main>
+            <!-- Banner del sitio solo disponible en el home. -->
+            <img class="imag" src="images/img-home-banner.jpg">
+            <h2>Basado en tu última visita</h2>
+            <!-- Seccion de articulos de la ultima visita. Se uso flexbox para acomodar automaticamente cada articulo segun el tamaño de la pantalla. En resoluciones
+            un poco inferiores de desktop puede verse aun sin una fila completa debido al tamaño de cada bloque, pero si es 100% responsive (logrado :D ). -->
+            <section class="articulos1">
+                <article>
+                    <img class="imag" src="images/img-cafetera-moulinex.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$6.770</p>
+                        <p class="descuen">40% OFF</>
+                    </div>
+                    <p id="descrip">Cafetera Moulinex</p>
+                </article>
+                <article>
+                    <img class="imag" src="images/img-macbook-pro-2019.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$230.000</p>
+                        <p class="descuen">20% OFF</p>
+                    </div>
+                    <p id="descrip">MacBook Pro 2019</p>
+                </article>
+                <article>
+                    <img class="imag" src="images/img-samsung-galaxy-s10.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$70.500</p>
+                        <p class="descuen">10% OFF</p>
+                    </div>
+                    <p id="descrip">Samsung Galaxy S10</p>
+                </article>
+                <article>
+                    <img class="imag" src="images/img-tv-samsung-smart.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$23.200</p>
+                        <p class="descuen">5% OFF</p>
+                    </div>
+                    <p id="descrip">SmartTv Samsung 43"</p>
+                </article>
+            </section>
+            <h2>Ofertas</h2>
+            <!-- Iden. de la ultima visita (tambien logrado :D ) -->
+            <section class="articulos1">
+                <article>
+                    <img class="imag" src="images/img-cafetera-moulinex.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$6.770</p>
+                        <p class="descuen">40% OFF</p>
+                    </div>
+                    <p id="descrip">Cafetera Moulinex</p>
+                </article>
+                <article>
+                    <img class="imag" src="images/img-macbook-pro-2019.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$230.000</p>
+                        <p class="descuen">20% OFF</p>
+                    </div>
+                    <p id="descrip">MacBook Pro 2019</p>
+                </article>
+                <article>
+                    <img class="imag" src="images/img-samsung-galaxy-s10.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$70.500</p>
+                        <p class="descuen">10% OFF</p>
+                    </div>
+                    <p id="descrip">Samsung Galaxy S10</p>
+                </article>
+                <article>
+                    <img class="imag" src="images/img-tv-samsung-smart.jpg">
+                    <hr>
+                    <p class="ico-envio"><i class="fa-solid fa-truck"></i></p>
+                    <div class="alinear">
+                        <p class="precio">$23.200</p>
+                        <p class="descuen">5% OFF</p>
+                    </div>
+                    <p id="descrip">SmartTv Samsung 43"</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <!-- Seccion del pie de pagina con tres grupos de dos etiquetas y un icono cada uno. En desktop se uso flexbox para acomodar en una linea cada grupo.
+            En movil, se muestran apilados uno sobre otro. -->
+            <section class="pie-seccion">
+                <section class="pie">
+                    <p class="ico"><i class="fa-solid fa-credit-card"></i></p>
+                    <h3>Pagá con tarjeta o en efectivo</h3>
+                    <p class="txtcuer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </section>
+                <section class="pie">
+                    <p class="ico"><i class="fa-solid fa-gift"></i></p>
+                    <h3>Envío gratis desde $ 2.500</h3>
+                    <p class="txtcuer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                </section>
+                <section class="pie">
+                    <p class="ico"><i class="fa-solid fa-user-shield"></i></p>
+                    <h3>Seguridad, de principio a fin</h3>
+                    <p class="txtcuer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                </section class="pie">
+            </section>
+            <!-- Etiqueta p final del pie de pagina. -->
+            <p class="cprht">Copyright © 1999-2023 MercadoLiebre S.R.L.</p>
+        </footer>
+    </body>
+</html>
